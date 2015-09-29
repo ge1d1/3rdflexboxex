@@ -1,0 +1,61 @@
+.box{
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	text-shadow:4px 4px 0 #999;
+}
+
+.box p{
+	font-size: 20px;
+}
+
+/* colors for each box----------------------------------*/
+
+.box1{background-color: #788080}
+.box2{background-color: #cccc00}
+.box3{background-color: #00cc00;}
+.box4{background-color: #99ccff;}
+.box5{background-color: #e6c7e6;}
+.box6{background-color: #d11919;}
+.box7{background-color: #4ab04f;}
+.box8{background-color: #f1fb41;}
+.box9{background-color: #33ccff;}
+.box10{background-color: #cc00ff;}
+
+/* flex start point----------------------------------*/
+
+.wrapper{
+	display: flex; /*flex is a new property-*/
+	-webkit-webkit: column; /*row is default for flex*/
+	-moz-webkit: column;
+	-ms-webkit: column;
+	-o-webkit: column;
+	webkit: column;
+	flex-direction:row; /*chngd from colmn back to row*/
+	width: 80%;
+	height: 500px;
+	border: 10px solid black;
+	margin:0 auto;
+	flex-wrap:wrap;
+}
+
+.box{ /* box tidy-up*/
+	flex:1;
+	min-width: 25%;
+	min-height: 100px;
+}
+
+.box3{
+	flex:3;
+	flex-order:-1;
+}
+
+
+
+
+
+
+
+
+
+
